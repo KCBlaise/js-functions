@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>JS Functions and Objects</title>
+</head>
+<body>
+    <header>
+        Javascript Functions
+    </header>
+    <main>
+        <div class="landing">
+            <div class="task">
+                <span class="task-header">Task 1</span><br>
+                Write a JavaScript program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+                <button class="execute-task" id="execute-task-1" onclick="task1()">Execute Task</button>
+                <span>Open console to see results.</span>
+            </div>
+
+            <div class="task">
+                <span class="task-header">Task 2</span><br>
+                Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.
+                <span>Open console to execute pow function.</span>
+            </div>
+
+            <div class="task" id="task-3">
+                <span class="task-header">Task 3</span><br>
+                Write a JavaScript code to calculate the average marks of these students. The average is then used to determine the corresponding grade.
+                <table border="2px" bordercolor="white">
+                    <tr>
+                        <th>Name</th>
+                        <th>Marks</th>
+                    </tr>
+                    <tr>
+                        <td>David</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Vinoth</td>
+                        <td>77</td>
+                    </tr>
+                    <tr>
+                        <td>Divya</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>Ishitha</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Thomas</td>
+                        <td>68</td>
+                    </tr>
+                </table>
+
+                <table border="2px" bordercolor="white">
+                    <tr>
+                        <th>Range</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>< 60</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>< 70</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>< 80</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>< 90</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>< 100</td>
+                        <td>A</td>
+                    </tr>
+                </table>
+
+                <button class="execute-task" onclick="task3()">Execute Task</button>
+                <div id="execute-task-3">Click above button to see the result.</div>
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/task1.js"></script>
+    <script src="./js/task2.js"></script>
+    <script src="./js/task3.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./images/fabrizio-conti-kXVogATbFgA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header{
+    height: 120px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border-bottom: white 2px solid;
+}
+
+
+.landing{
+    min-height: calc(100vh - 120px);
+    padding: 3.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5rem;
+}
+
+#task-3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.task{
+    border: 5px solid white;
+    color: white;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.task-header{
+    font-size: 1.5rem;
+}
+
+.execute-task{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    width: 10rem;
+    text-align: center;
+
+}
+
+table{
+    width: 500px;
+    margin-top: 1rem;
+}
+
+#execute-task-3{
+    height: 1.5rem
+}
+
+@media screen and (max-width:768px) {
+    .landing{
+        height: auto;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+    }
+
+    #task-3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .landing{
+        height: auto;
+        padding: 1rem;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0.5rem;
+    }
+
+    table{
+        width: 100px;
+    }
+    
+}
